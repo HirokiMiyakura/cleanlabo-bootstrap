@@ -1,0 +1,592 @@
+$main-color: #228b22;
+$main-color-dark: #1e643a;
+$sub-color: #1996e3;
+$orange: orange;
+$dark-orange: #d2992a;
+$yellow: #e6e600;
+$normal-width: calc(100% - 24px);
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	max-width: 430px;
+	margin: 0 auto;
+}
+
+main {
+	// padding-bottom: 15vh;
+	padding-bottom: 210px;
+}
+
+section {
+	padding: 3rem 0;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+// 個別スタイル
+
+.title {
+	font-size: 28px;
+	font-weight: 900;
+	line-height: 1.7;
+	letter-spacing: 2px;
+}
+
+.sub-title {
+	// width: $normal-width;
+	font-weight: 700;
+	font-size: 21px;
+	position: relative;
+	padding: 0.25em 1em;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+	letter-spacing: 2px;
+}
+.sub-title:before,
+.sub-title:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: -webkit-calc(100% + 14px);
+	height: calc(100% + 14px);
+	background-color: black;
+}
+.sub-title:before {
+	left: 7px;
+}
+.sub-title:after {
+	right: 7px;
+}
+
+.big {
+	font-size: 1.5em;
+	padding-right: 2px;
+}
+
+.small {
+	font-size: 0.7em;
+	padding-right: 2px;
+}
+.smallest {
+	font-size: 0.5em;
+	padding-right: 2px;
+}
+
+span.marker {
+	background-color: rgba(240, 255, 0, 1);
+	background-position: left bottom;
+	background-size: 100% 50%;
+}
+
+.ex-bold {
+	font-weight: 900;
+}
+
+.color-black {
+	color: #000;
+}
+
+.color-main {
+	color: $main-color;
+}
+
+.color-sub {
+	color: $sub-color;
+}
+
+.color-red {
+	color: red;
+}
+
+.color-orange {
+	color: $orange;
+}
+
+// 背景など
+
+.bg-main {
+	background: $main-color;
+}
+
+.bg-main-dark {
+	background: $main-color-dark;
+}
+
+.bg-orange {
+	background: $orange;
+}
+
+.bg-sub {
+	background: $sub-color;
+}
+
+.bg-black {
+	background: #000;
+}
+
+.bg-yellow {
+	background: $yellow;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.bg-skyblue {
+	background: skyblue;
+}
+
+.normal-width {
+	width: $normal-width;
+}
+
+// header
+
+.top-message {
+	font-size: 11px;
+}
+
+.site-title {
+	font-size: 1.8rem;
+}
+
+.branch-table {
+	tr {
+		td {
+			font-size: 9px;
+			padding: 0.25rem 0.5rem;
+			text-align: center;
+			background: red;
+			border: 1px solid #fff;
+			color: #fff;
+		}
+	}
+}
+
+.area {
+	font-size: 10px;
+	padding: 4px 21px 6px;
+	display: inline-block;
+}
+
+// mv
+
+.mv {
+	background: url('../img/mvbg.jpg') no-repeat center center;
+	background-size: cover;
+	// height: 50vh;
+}
+
+.four-service {
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.sukashi {
+	background: rgba(255, 255, 255, 0.7);
+	font-size: 14px;
+}
+
+.plan-box {
+	letter-spacing: 1px;
+}
+
+.otoku-box {
+	letter-spacing: 1px;
+	font-size: 14px;
+	border: 2px solid #000;
+}
+
+.gradient {
+	font-size: 70px;
+	letter-spacing: -2px;
+	// font-style: italic;
+	-webkit-text-stroke: 2px white;
+	text-shadow: 3px 3px 3px #000;
+}
+
+// free
+
+.bg-blue {
+	background: $sub-color;
+}
+
+.free-box {
+	border: 3px solid #000;
+	&__item {
+		font-size: 12px;
+	}
+	&__price {
+		font-size: 2.5rem;
+		color: red;
+	}
+}
+
+// cv
+
+.cv {
+	border: 3px solid #000;
+	width: $normal-width;
+	padding: 1rem;
+	.mitsumori {
+		color: red;
+		font-size: 18px;
+	}
+	.tel {
+		font-size: 38px;
+		color: $sub-color;
+	}
+	.bg-green,
+	.bg-pink,
+	.bg-navy {
+		padding: 7px 0 9px;
+		letter-spacing: 1px;
+		p {
+			font-size: 11px;
+		}
+	}
+	.bg-green {
+		background: $main-color;
+	}
+	.bg-pink {
+		background: red;
+	}
+	.bg-navy {
+		background: $sub-color;
+	}
+}
+
+.cv-link {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.cv-line {
+	padding: 1rem 0 0.8rem;
+	background: $main-color;
+	border-bottom: 4px solid $main-color-dark;
+	span {
+		padding-right: 11px;
+		img {
+			width: 32px;
+		}
+	}
+}
+
+.cv-mail {
+	padding: 1rem 0 0.8rem;
+	background: $orange;
+	border-bottom: 4px solid $dark-orange;
+	span {
+		padding-right: 11px;
+		img {
+			width: 32px;
+		}
+	}
+}
+
+.cv-tel {
+	padding: 1rem 0 0.8rem;
+	background: $main-color;
+	background: $sub-color;
+	border-bottom: 4px solid blue;
+	span {
+		padding-right: 11px;
+		img {
+			width: 20px;
+		}
+	}
+}
+
+// ビフォーアフター
+
+.ba-box {
+	&__mark {
+		background: $sub-color;
+		padding: 4px 14px;
+		font-size: 10px;
+		bottom: 0;
+		left: 0;
+	}
+	&__yajirushi {
+		top: 25%;
+		left: 45%;
+		z-index: 1;
+		font-size: 2rem;
+		color: red;
+	}
+}
+
+// サービス
+
+.service-box {
+	border: 1px solid $main-color;
+	width: $normal-width;
+	width: calc(50% - 4px);
+	&__title {
+		font-size: 14px;
+		background: $main-color;
+		letter-spacing: 1px;
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 1.7;
+	}
+}
+
+// 定額パック
+
+.pack-box {
+	border: 3px solid #000;
+	&__title {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	&__inner {
+		padding: 1rem;
+		div {
+			&:last-child {
+				width: 40%;
+			}
+		}
+		&__title {
+			font-size: 14px;
+		}
+	}
+}
+
+// 悪徳業者
+
+.alert-title {
+	font-size: 28px;
+	color: red;
+	letter-spacing: 2px;
+}
+
+// 8つの理由
+
+.reason-box {
+	border: 1px solid $sub-color;
+	width: $normal-width;
+	width: calc(50% - 4px);
+	&__title {
+		font-size: 14px;
+		background: $sub-color;
+		letter-spacing: 1px;
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 1.7;
+	}
+}
+
+// お客様の声
+
+.voice-box {
+	background: #fff;
+	padding: 1rem 1rem 3rem 1rem;
+	border: 3px solid #000;
+	position: relative;
+	font-size: 14px;
+	line-height: 1.7;
+	.name {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		padding: 4px 7px;
+	}
+}
+
+// 対応エリア
+
+.area-box {
+	border: 3px solid #000;
+	padding: 1rem;
+	li {
+		font-size: 14px;
+	}
+}
+
+// Q&A
+
+.bg-skyblue {
+	.faq-box {
+		padding: 1rem;
+		background: #fff;
+		border: 3px solid #000;
+		font-size: 14px;
+		letter-spacing: 1px;
+		.question {
+			span {
+				color: red;
+				padding-right: 8px;
+			}
+		}
+		.answer {
+			span {
+				color: green;
+				padding-right: 8px;
+			}
+		}
+	}
+}
+
+// 不用品回収のSTEP
+
+.step-box {
+	border: 3px solid #000;
+	padding: 1rem 0;
+	width: calc(100% - 6px);
+	margin: 0 auto;
+	&__inner {
+		padding: 0 1rem;
+		min-width: 150px;
+		&:last-child {
+			padding: 0 1rem 0 0;
+		}
+		.number {
+			font-size: 11px;
+			color: #fff;
+			background: $sub-color;
+		}
+		.komoku {
+			font-size: 14px;
+		}
+		img {
+			width: 80px;
+		}
+	}
+}
+
+// お問い合わせ
+
+.hissu {
+	color: red;
+	font-size: 12px;
+	padding-left: 4px;
+}
+
+.wpcf7 {
+	label {
+		font-weight: bold;
+	}
+	button,
+	input,
+	optgroup,
+	select,
+	textarea {
+		width: 100%;
+		border: 1px solid silver;
+		border-style: auto;
+		margin-top: 7px;
+		padding: 11px;
+	}
+	.wpcf7-radio {
+		margin-top: 21px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 14px;
+		font-weight: normal;
+		text-align: center;
+	}
+	input[type='submit'] {
+		background: $orange;
+		color: #fff;
+		letter-spacing: 2px;
+		border: none;
+	}
+}
+
+// 会社情報
+
+.my-table {
+	font-size: 14px;
+	tr {
+		td {
+			display: block;
+			width: 100%;
+			&:first-child {
+				margin-bottom: 3px;
+			}
+			&:last-child {
+				margin-bottom: 9px;
+			}
+		}
+	}
+}
+
+// SP-CV
+
+.footer-cv {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 430px;
+	margin: 0 auto;
+	.line {
+		background: linear-gradient(
+			180deg,
+			$main-color 0%,
+			$main-color 50%,
+			$main-color-dark 50%,
+			$main-color-dark 100%
+		);
+		span {
+			padding-right: 14px;
+			img {
+				width: 32px;
+			}
+		}
+	}
+	.tel {
+		background: linear-gradient(180deg, blue 0%, blue 50%, navy 50%, navy 100%);
+		span {
+			padding-right: 14px;
+			img {
+				width: 16px;
+			}
+		}
+	}
+	a {
+		color: #fff;
+		display: block;
+		padding: 14px 0 12px;
+		font-size: 21px;
+		letter-spacing: 2px;
+		&:first-child {
+			border-right: 1px solid #fff;
+		}
+	}
+}
+
+.ticker-news {
+	pointer-events: none;
+	.ticker-title {
+		width: 0% !important;
+		min-width: none !important;
+	}
+	.ticker-content {
+		max-width: 100% !important;
+		a {
+			color: #000 !important;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		.ticker-content {
+			font-size: 14px !important;
+		}
+	}
+}
+
+.grecaptcha-badge {
+	display: none;
+}
