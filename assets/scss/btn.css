@@ -22,16 +22,12 @@ button.btn {
 }
 
 .btn-wrap {
-  margin: 14px 10px;
+  margin: 9px 10px;
   position: fixed;
   bottom: 0;
   width: calc(100% - 20px);
-  max-width: 430px;
-}
-
-.btn-wrap-pc-sp {
-  max-width: 435px;
-  margin: 0 auto 20px;
+  max-width: 410px;
+  z-index: 100;
 }
 
 a.btn--line {
@@ -39,8 +35,8 @@ a.btn--line {
   display: block;
   padding: 1rem 0;
   color: #fff;
-  background: #094;
-  box-shadow: 0 5px 0 #008039;
+  background: #228b22;
+  box-shadow: 0 5px 0 #1e643a;
 }
 
 a.btn--line i {
@@ -65,14 +61,14 @@ a.btn--line .number {
 
 a.btn--line:hover {
   color: #fff;
-  background: #008039;
+  background: #1e643a;
 }
 
 a.btn--tel {
   font-size: 18px;
   display: block;
-  margin-top: 14px;
-  padding: 0.75rem 0 0.7rem;
+  margin-top: 9px;
+  padding: 0.75rem 0 0.6rem;
   color: #fff;
   background: #d20010;
   box-shadow: 0 5px 0 #b9000e;
